@@ -28,6 +28,6 @@ if __name__ == "__main__":
                 except:
                     connectionResult[sourceRoad] = {targetRoad: num}
     result = json.dumps(connectionResult, indent='\t')
-    with open('serviceRoad.json', 'w', newline='\r\n') as file:
+    with open('roadConnection.json', 'w', newline='\r\n') as file:
         file.write(result)
 
