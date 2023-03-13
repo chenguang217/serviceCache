@@ -87,9 +87,12 @@ if __name__ == "__main__":
                             except:
                                 result[edge.getID()] = {'poi': {poi[1]: 1}}
                         # poiResult[edge.getID()] = {poi[1]: 1}
-    # print(result)
-    for k, v in result.items():
-        print(len(v['poi']))
+    print(result)
+    result = json.dumps(result, indent='\t')
+    with open('serviceRoad.json', 'w', newline='\r\n') as file:
+        file.write(result)
+    # for k, v in result.items():
+    #     print(len(v['poi']))
         # if detail.split(';')[1] not in poiType:
         #     poiType.append(detail.split(';')[1])
         # try:

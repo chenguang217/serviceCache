@@ -1,4 +1,5 @@
 import xmltodict
+import json
 
 connectionNum = 5
 
@@ -26,4 +27,7 @@ if __name__ == "__main__":
                     connectionResult[sourceRoad][targetRoad] = num
                 except:
                     connectionResult[sourceRoad] = {targetRoad: num}
-    print((connectionResult))
+    result = json.dumps(connectionResult, indent='\t')
+    with open('serviceRoad.json', 'w', newline='\r\n') as file:
+        file.write(result)
+
