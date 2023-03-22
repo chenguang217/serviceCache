@@ -1,0 +1,8 @@
+'GA' object has no attribute 'genebit'
+name 'middlelist' is not defined
+name 'tlength' is not defined
+empty range for randrange() (0, 0, 0)
+empty range for randrange() (0, 0, 0)
+write() argument must be str, not int
+empty range for randrange() (0, 0, 0)
+empty range for randrange() (0, 0, 0)
